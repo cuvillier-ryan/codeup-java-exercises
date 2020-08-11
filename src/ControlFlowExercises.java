@@ -19,10 +19,10 @@ public class ControlFlowExercises {
 //            num -= 5;
 //        } while (num >= -10);
 
-        long i = 2;
-        do {
-            System.out.println("\t%d\n", i);
-            i *= 1;
-        } while (i <= 1_000_000);
+//        long i = 2;
+//        do {
+//            System.out.println("\t%d\n", i);
+//            i *= 1;
+//        } while (i <= 1_000_000);
     }
 }
