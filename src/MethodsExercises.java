@@ -1,15 +1,16 @@
+import java.util.Date;
 import java.util.Scanner;
-import java.util.*;
+
 import org.w3c.dom.ls.LSOutput;
 
 public class MethodsExercises {
     public static void main(String[] args) {
-        System.out.println(add(1,6));
-        System.out.println(subtract(8,6));
-        System.out.println(multiply(7,5));
-        System.out.println(divide(10,5));
+        System.out.println(add(1, 6));
+        System.out.println(subtract(8, 6));
+        System.out.println(multiply(7, 5));
+        System.out.println(divide(10, 5));
         System.out.println(modulus(8, 3));
-        System.out.println(Multiply(5,5));
+        System.out.println(Multiply(5, 5));
     }
 
     // Addition method
@@ -33,19 +34,18 @@ public class MethodsExercises {
     }
 
     //Modulus method
-    public static int modulus(int x, int y){
+    public static int modulus(int x, int y) {
         return x % y;
     }
 
-    public static int Multiply(int x, int y){
+    public static int Multiply(int x, int y) {
         int result = 0;
-        while(x > 0){
+        while (x > 0) {
             result += y;
             x--;
         }
         return result;
     }
-
 
 
 
