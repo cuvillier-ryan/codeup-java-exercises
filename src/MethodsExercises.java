@@ -11,6 +11,7 @@ public class MethodsExercises {
         System.out.println(divide(10, 5));
         System.out.println(modulus(8, 3));
         System.out.println(Multiply(5, 5));
+        System.out.println(multiplyRec(30, 5));
     }
 
     // Addition method
@@ -47,8 +48,22 @@ public class MethodsExercises {
         return result;
     }
 
+    static int multiplyRec(int x, int y) {
 
+        /* 0 multiplied with anything gives 0 */
+        if (y == 0)
+            return 0;
 
+        /* Add x one by one */
+        if (y > 0)
+            return (x + multiply(x, y - 1));
+
+        /* the case where y is negative */
+        if (y < 0)
+            return -multiply(x, -y);
+
+        return -1;
+    }
 
 
 }
