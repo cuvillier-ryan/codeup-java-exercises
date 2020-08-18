@@ -5,6 +5,8 @@ public class Person {
         return name;
     }
 
+
+    //this is the setter
     public void setName(String name) {
         this.name = name;
     }
@@ -13,13 +15,21 @@ public class Person {
         System.out.println("Hello" + name);
     }
 
+
+    //this is the constructor
     public Person(String name) {
         this.name = name;
     }
 
+
+
+
+
     public static void main(String[] args) {
         Person ryan =  new Person("Ryan");
+
         System.out.println(ryan);
+
 
 
 //        Person person1 = new Person("John");
