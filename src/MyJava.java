@@ -1,22 +1,51 @@
 public class MyJava {
+
     public static void main(String[] args) {
-//        System.out.println("Hello World!");
-//        final float PI = 3.14F;
 
-
-        boolean gamoeOVer = true;
-        int score = 900;
+        boolean gameOver = true;
+        int score = 800;
         int levelCompleted = 5;
         int bonus = 100;
 
-        if (score < 5000 && score > 1000) {
-            System.out.println("Your score was less than 5000 but greater than 1000");
-        } else if (score < 1000) {
-            System.out.println("You score was less than 1000");
-        } else {
-            System.out.println("This is the last resort");
-        }
+
+        int highScore = calculateScore(gameOver, score, levelCompleted, bonus);
+        System.out.println("Your high score was " + highScore);
+
+        score = 10000;
+        levelCompleted = 8;
+        bonus = 200;
+
+        highScore = calculateScore(gameOver, score, levelCompleted, bonus);
+        System.out.println("Your final score was " + highScore);
+
 
 
     }
+
+//    This section is talking about methods in Java
+//    When creating a method, when needed, use parameters to call arguments later.
+
+    public static int calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
+
+        if (gameOver) {
+            int finalScore = score + (levelCompleted * bonus);
+            finalScore += 2000;
+            return finalScore;
+        }
+        return -1;
+    }
+
+    public static void displayHighScorePosition(String playerName, int hsPosition){
+        System.out.println(playerName + "managed to get into position " + hsPosition + " on the high score table");
+    }
+
+    public static int calculateHighScorePosition(int playerScore){
+        if(playerScore > 1000){
+            return
+        }
+    }
+
+
+
 }
+
