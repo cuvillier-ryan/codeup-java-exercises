@@ -19,7 +19,13 @@ public class MyJava {
         System.out.println("Your final score was " + highScore);
 
         int highScorePosition = calculateHighScorePosition(1500);
-        displayHighScorePosition("Ryan", highScorePosition);
+        displayHighScorePosition("Ryan ", highScorePosition);
+
+        highScorePosition = calculateHighScorePosition(900);
+        displayHighScorePosition("Rita ", highScorePosition);
+
+        highScorePosition = calculateHighScorePosition(400);
+        displayHighScorePosition("Amber ", highScorePosition);
 
 
 
