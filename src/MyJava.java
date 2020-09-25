@@ -39,11 +39,11 @@ public class MyJava {
         System.out.println(playerName + "managed to get into position " + hsPosition + " on the high score table");
     }
 
-    public static int calculateHighScorePosition(int playerScore){
-        if(playerScore > 1000){
-            return
-        }
-    }
+//    public static int calculateHighScorePosition(int playerScore){
+//        if(playerScore > 1000){
+//            return
+//        }
+//    }
 
 
 
