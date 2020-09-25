@@ -19,13 +19,16 @@ public class MyJava {
         System.out.println("Your final score was " + highScore);
 
         int highScorePosition = calculateHighScorePosition(1500);
-        displayHighScorePosition("Ryan ", highScorePosition);
+        displayHighScorePosition("Ryan", highScorePosition);
 
         highScorePosition = calculateHighScorePosition(900);
-        displayHighScorePosition("Rita ", highScorePosition);
+        displayHighScorePosition("Rita", highScorePosition);
 
         highScorePosition = calculateHighScorePosition(400);
-        displayHighScorePosition("Amber ", highScorePosition);
+        displayHighScorePosition("Amber", highScorePosition);
+
+        highScorePosition = calculateHighScorePosition(1000);
+        displayHighScorePosition("Parker", highScorePosition);
 
 
 
@@ -45,15 +48,15 @@ public class MyJava {
     }
 
     public static void displayHighScorePosition(String playerName, int hsPosition){
-        System.out.println(playerName + "managed to get into position " + hsPosition + " on the high score table");
+        System.out.println(playerName + " managed to get into position " + hsPosition + " on the high score table");
     }
 
     public static int calculateHighScorePosition(int playerScore){
-        if(playerScore > 1000){
+        if(playerScore >= 1000){
             return 1;
-        }else if(playerScore > 500 && playerScore < 1000){
+        }else if(playerScore >= 500 && playerScore < 1000){
             return 2;
-        }else if(playerScore > 100 && playerScore < 500){
+        }else if(playerScore >= 100 && playerScore < 500){
             return 3;
         } else {
             return 4;
