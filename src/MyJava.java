@@ -31,12 +31,10 @@ public class MyJava {
         displayHighScorePosition("Parker", highScorePosition);
 
 
-
     }
 
-//    This section is talking about methods in Java
+    //    This section is talking about methods in Java
 //    When creating a method, when needed, use parameters to call arguments later.
-
     public static int calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
 
         if (gameOver) {
@@ -47,23 +45,29 @@ public class MyJava {
         return -1;
     }
 
-    public static void displayHighScorePosition(String playerName, int hsPosition){
+    public static void displayHighScorePosition(String playerName, int hsPosition) {
         System.out.println(playerName + " managed to get into position " + hsPosition + " on the high score table");
     }
 
-    public static int calculateHighScorePosition(int playerScore){
-        if(playerScore >= 1000){
-            return 1;
-        }else if(playerScore >= 500 && playerScore < 1000){
-            return 2;
-        }else if(playerScore >= 100 && playerScore < 500){
-            return 3;
-        } else {
-            return 4;
+    public static int calculateHighScorePosition(int playerScore) {
+//        if (playerScore >= 1000) {
+//            return 1;
+//        } else if (playerScore >= 500) {
+//            return 2;
+//        } else if (playerScore >= 100) {
+//            return 3;
+//        }
+//        return 4;
+        int position = 4; // assuming position 4 will be returned
+
+        if (playerScore >= 1000) {
+            position = 1;
+        } else if (playerScore >= 500) {
+            position = 2;
+        } else if(playerScore >= 100){
+            position = 3;
         }
+        return position;
     }
-
-
-
 }
 
