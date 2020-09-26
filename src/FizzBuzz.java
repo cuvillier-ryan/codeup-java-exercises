@@ -1,17 +1,17 @@
 public class FizzBuzz {
     public static void main(String[] args) {
-//        for (int i = 1; i <= 100; i++) {
-//            if (i % 3 == 0) {
-//                if (i % 5 == 0) {
-//                    System.out.println("FizzBuzz");
-//                } else {
-//                    System.out.println("Fizz");
-//                }
-//            } else if (i % 5 == 0) {
-//                System.out.println("Buzz");
-//            }
-//
-//        }
+        for (int i = 1; i <= 100; i++) {
+            if (i % 3 == 0) {
+                if (i % 5 == 0) {
+                    System.out.println("FizzBuzz");
+                } else {
+                    System.out.println("Fizz");
+                }
+            } else if (i % 5 == 0) {
+                System.out.println("Buzz");
+            }
+
+        }
 
         for (int k = 1; k <= 50; k++) {
             if (k % 3 == 0 && k % 5 == 0) {
@@ -29,6 +29,17 @@ public class FizzBuzz {
 //    public static String fizzBuzz(int number){
 //        if(b)
 //    }
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
