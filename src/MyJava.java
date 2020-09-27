@@ -35,7 +35,7 @@ public class MyJava {
         checkNumber(-5);
         checkNumber(0);
 
-        fizzBuzz(80);
+        fizzBuzz();
 
     }
 
@@ -70,29 +70,33 @@ public class MyJava {
             position = 1;
         } else if (playerScore >= 500) {
             position = 2;
-        } else if(playerScore >= 100){
+        } else if (playerScore >= 100) {
             position = 3;
         }
         return position;
     }
 
-    public static void checkNumber(int number){
-        if(number > 0){
+    public static void checkNumber(int number) {
+        if (number > 0) {
             System.out.println("positive");
-        }else if(number < 0){
+        } else if (number < 0) {
             System.out.println("negative");
-        }else if(number == 0){
+        } else if (number == 0) {
             System.out.println("zero");
         }
     }
 
-    public static void fizzBuzz(int number){
-        if(number % 15 == 0){
-            System.out.println("FizzBuzz");
-        } else if(number % 5 == 0){
-            System.out.println("Buzz");
-        } else if(number % 3 == 0){
-            System.out.println("Fizz");
+    public static void fizzBuzz() {
+        for (int num = 1; num <= 100; num++) {
+            if (num % 15 == 0) {
+                System.out.println("FizzBuzz");
+            } else if (num % 5 == 0) {
+                System.out.println("Buzz");
+            } else if (num % 3 == 0) {
+                System.out.println("Fizz");
+            }else {
+                System.out.println(num);
+            }
         }
     }
 }
