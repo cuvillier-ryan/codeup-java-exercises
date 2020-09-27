@@ -7,12 +7,12 @@ public class Square extends Quadrilateral {
 
     @Override
     public void setLength(double length) {
-    this.length = length;
+        this.length = length;
     }
 
     @Override
     public void setWidth(double width) {
-    this.width = width;
+        this.width = width;
     }
 
     @Override
@@ -25,8 +25,6 @@ public class Square extends Quadrilateral {
         return length * width;
     }
 }
-
-
 
 
 //
@@ -45,4 +43,3 @@ public class Square extends Quadrilateral {
 //        return Math.pow(this.length, 2);
 //    }
 //}
-

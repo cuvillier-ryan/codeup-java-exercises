@@ -31,6 +31,10 @@ public class MyJava {
         displayHighScorePosition("Parker", highScorePosition);
 
 
+        checkNumber(5);
+        checkNumber(-5);
+        checkNumber(0);
+
     }
 
     //    This section is talking about methods in Java
@@ -68,6 +72,16 @@ public class MyJava {
             position = 3;
         }
         return position;
+    }
+
+    public static void checkNumber(int number){
+        if(number > 0){
+            System.out.println("positive");
+        }else if(number < 0){
+            System.out.println("negative");
+        }else if(number == 0){
+            System.out.println("zero");
+        }
     }
 }
 
