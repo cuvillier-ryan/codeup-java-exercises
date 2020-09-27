@@ -37,6 +37,8 @@ public class MyJava {
 
         fizzBuzz();
 
+
+        //the end of the main method
     }
 
     //    This section is talking about methods in Java
