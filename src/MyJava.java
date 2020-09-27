@@ -35,6 +35,8 @@ public class MyJava {
         checkNumber(-5);
         checkNumber(0);
 
+        fizzBuzz(80);
+
     }
 
     //    This section is talking about methods in Java
@@ -81,6 +83,16 @@ public class MyJava {
             System.out.println("negative");
         }else if(number == 0){
             System.out.println("zero");
+        }
+    }
+
+    public static void fizzBuzz(int number){
+        if(number % 15 == 0){
+            System.out.println("FizzBuzz");
+        } else if(number % 5 == 0){
+            System.out.println("Buzz");
+        } else if(number % 3 == 0){
+            System.out.println("Fizz");
         }
     }
 }
