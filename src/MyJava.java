@@ -38,8 +38,6 @@ public class MyJava {
         fizzBuzz();
 
 
-
-
         //the end of the main method
     }
 
@@ -98,7 +96,7 @@ public class MyJava {
                 System.out.println("Buzz");
             } else if (num % 3 == 0) {
                 System.out.println("Fizz");
-            }else {
+            } else {
                 System.out.println(num);
             }
         }
