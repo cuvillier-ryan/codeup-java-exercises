@@ -22,14 +22,10 @@ public class Person {
     }
 
 
-
-
-
     public static void main(String[] args) {
-        Person ryan =  new Person("Ryan");
+        Person ryan = new Person("Ryan");
 
         System.out.println(ryan);
-
 
 
 //        Person person1 = new Person("John");
