@@ -17,4 +17,25 @@ public class SpeedConverter {
             System.out.println(kilometersPerHour + " km/h= " + milesPerHour + " mi/h");
         }
     }
+
+    public static boolean shouldWakeUp(boolean barking, int hourOfDay) {
+        boolean result = false;
+        if (hourOfDay < 0 || hourOfDay > 23) {
+            return false;
+        } else if (hourOfDay >= 8 && hourOfDay <= 22) {
+            return false;
+        } else if (hourOfDay >= 1 && hourOfDay <= 7) {
+            return true;
+        }
+        return false;
+    }
+
+
+//        if(hourOfDay < 0 || > 23){
+//            return false;
+//        }else if (hourOfDay < 8 && hourOfDay > 22) {
+//            return true;
+//        }
+//    }
+
 }
