@@ -101,6 +101,16 @@ public class MyJava {
             }
         }
     }
+
+    public static void shouldWakeUp(boolean barking, int hourOfDay) {
+        if (hourOfDay > 8 && hourOfDay < 22) {
+            barking = true;
+        }
+
+
+    }
+
+
     //There is more to do with Java
 }
 
