@@ -102,10 +102,10 @@ public class MyJava {
         }
     }
 
-    public static void shouldWakeUp(boolean barking, int hourOfDay) {
-        if (hourOfDay > 8 && hourOfDay < 22) {
-            barking = true;
-        }
+    public static boolean shouldWakeUp(boolean barking, int hourOfDay) {
+        if(hourOfDay < 0 || hourOfDay > 23){
+            return false;
+        }else if ()
 
 
     }
