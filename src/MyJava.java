@@ -108,6 +108,11 @@ public class MyJava {
         else return hourOfDay < 8 || hourOfDay > 22;
     }
 
+    public static int addNumbers(int a, int b){
+        return a + b;
+    }
+
+
 
 //There is more to do with Java
 }

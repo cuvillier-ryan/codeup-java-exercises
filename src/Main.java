@@ -7,6 +7,8 @@ public class Main {
 //        SpeedConverter.printConversion(10.5);
 
         //come back to this.
-        System.out.println(MyJava.shouldWakeUp(false, -5));
+//        System.out.println(MyJava.shouldWakeUp(false, -5));
+
+        System.out.println(MyJava.addNumbers(1,5));
     }
 }
