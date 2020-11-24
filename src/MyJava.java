@@ -35,8 +35,6 @@ public class MyJava {
         checkNumber(-5);
         checkNumber(0);
 
-        fizzBuzz();
-
 
         //the end of the main method
     }
@@ -88,8 +86,8 @@ public class MyJava {
         }
     }
 
-    public static void fizzBuzz() {
-        for (int num = 1; num <= 100; num++) {
+    public static void fizzBuzz(int num) {
+        for (num = 1; num <= 100; num++) {
             if (num % 15 == 0) {
                 System.out.println("FizzBuzz");
             } else if (num % 5 == 0) {
@@ -108,12 +106,30 @@ public class MyJava {
         else return hourOfDay < 8 || hourOfDay > 22;
     }
 
-    public static int addNumbers(int a, int b){
+    public static int addNumbers(int a, int b) {
         return a + b;
     }
 
 
+    public static boolean isLeapYear(int year) {
+        if (year <= 1 || year >= 9999) {
+            return false;
+        } else if (year % 4 == 0) {
+            return true;
+        } else if (year % 100 == 0) {
+            return true;
+        } else if (year % 400 == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
-//There is more to do with Java
+
+//        if (year % 4 == 0 && year % 100 == 0 && year % 400 == 0) {
+//            return true;
+//        }
+//        return false;
+//    }
 }
 
