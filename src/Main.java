@@ -12,7 +12,7 @@ public class Main {
         System.out.println(MyJava.addNumbers(1,5));
 
 //        MyJava.fizzBuzz(80);
-        System.out.println(MyJava.isLeapYear(1900));
+        System.out.println(MyJava.isLeapYear(1800));
 
     }
 }
