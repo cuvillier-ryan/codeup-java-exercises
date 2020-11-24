@@ -116,11 +116,20 @@ public class MyJava {
             return false;
         } else if (year % 4 == 0 && year % 100 != 0) {
             return true;
-        }else if(year % 100 == 0 && year % 400 == 0){
+        } else if (year % 100 == 0 && year % 400 == 0) {
             return true;
         }
         return false;
     }
+
+    public static boolean areEqualByThreeDecimalPlaces(double num1, double num2) {
+        if ((int) (num1 * 1000) == (int) (num2 * 1000)) {
+        return true;
+        }
+        return false;
+    }
+
+
 
 
 //        if (year % 4 == 0 && year % 100 == 0 && year % 400 == 0) {
