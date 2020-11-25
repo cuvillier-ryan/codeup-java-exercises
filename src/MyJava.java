@@ -129,6 +129,16 @@ public class MyJava {
         return false;
     }
 
+    public static boolean hasEqualSum(int num1, int num2, int num3){
+        int sumNum1Num2 = num1 + num2;
+        if(sumNum1Num2 == num3){
+            return true;
+        }
+        return false;
+    }
+
+
+
 
 
 

@@ -14,5 +14,7 @@ public class Main {
 //        MyJava.fizzBuzz(80);
         System.out.println(MyJava.isLeapYear(1800));
 
+        System.out.println(MyJava.hasEqualSum(3,3,7));
+
     }
 }
