@@ -22,18 +22,21 @@ public class Main {
 //
 //        System.out.println(MyJava.calcFeetAndInchesToCentimeters(8,32));
 
-        Scanner scan = new Scanner(System.in);
-        int i = scan.nextInt();
-        double d = scan.nextDouble();
-        scan.nextLine();
-        String s = scan.nextLine();
+//        Scanner scan = new Scanner(System.in);
+//        int i = scan.nextInt();
+//        double d = scan.nextDouble();
+//        scan.nextLine();
+//        String s = scan.nextLine();
+//
+//        // Write your code here.
+//
+//
+//        System.out.println("String: " + s);
+//        System.out.println("Double: " + d);
+//        System.out.println("Int: " + i);
 
-        // Write your code here.
 
-
-        System.out.println("String: " + s);
-        System.out.println("Double: " + d);
-        System.out.println("Int: " + i);
+        MyJava.practice(10);
 
 
 
