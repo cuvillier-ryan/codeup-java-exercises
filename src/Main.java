@@ -16,5 +16,7 @@ public class Main {
 
         System.out.println(MyJava.hasEqualSum(3,3,7));
 
+        System.out.println(MyJava.hasTeen(19,10,12));
+
     }
 }
