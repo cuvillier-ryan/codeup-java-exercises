@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class MyJava {
 
     public static void main(String[] args) {
@@ -154,6 +156,27 @@ public class MyJava {
         }
         return false;
     }
+
+//    Method Overloading Udemy Challenge
+
+    public static double calcFeetAndInchesToCentimeters(double feet, double inches){
+        if(feet >= 0){
+            return feet * 30.48;
+        }else if(inches >= 0 && inches <= 12){
+            return inches * 2.54;
+        }
+        return -1;
+    }
+
+    public static double calcFeetAndInchesToCentimeters(double inches){
+        if(inches >= 0){
+
+        }
+        return -1;
+    }
+
+
+
 
 
 
