@@ -160,20 +160,22 @@ public class MyJava {
 //    Method Overloading Udemy Challenge
 
     public static double calcFeetAndInchesToCentimeters(double feet, double inches){
-        if(feet >= 0){
-            return feet * 30.48;
-        }else if(inches >= 0 && inches <= 12){
-            return inches * 2.54;
+        if((feet < 0) || ((inches < 0) && (inches > 12))){
+            return -1;
         }
-        return -1;
+
+        double centimeters = (feet * 12) * 2.54;
+        centimeters += inches * 2.54;
+        System.out.println(feet + " feet, " + inches + " inches = " + centimeters + " cm");
+        return centimeters;
     }
 
-    public static double calcFeetAndInchesToCentimeters(double inches){
-        if(inches >= 0){
-
-        }
-        return -1;
-    }
+//    public static double calcFeetAndInchesToCentimeters(double inches){
+//        if(inches >= 0){
+//
+//        }
+//        return -1;
+//    }
 
     public static void practice(int N){
         for(int i = 1; i <= 10; i++){
