@@ -160,7 +160,8 @@ public class MyJava {
 //    Method Overloading Udemy Challenge
 
     public static double calcFeetAndInchesToCentimeters(double feet, double inches){
-        if((feet < 0) || ((inches < 0) && (inches > 12))){
+        if((feet < 0) || ((inches < 0) || (inches > 12))){
+            System.out.println("Invalid feet and inches parameters");
             return -1;
         }
 
@@ -182,6 +183,13 @@ public class MyJava {
             int sum = N * i;
             System.out.println(N + " x " + i + " = " + sum);
         }
+
+
+        public static void practice(int N){
+            for(int i = 1; i <= 10; i++){
+                int sum = N * i;
+                System.out.println(N + " x " + i + " = " + sum);
+            }
     }
 
 
