@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class MyJava {
@@ -184,7 +185,7 @@ public class MyJava {
         return calcFeetAndInchesToCentimeters(feet, remainingInches);
     }
 
-//    Another Method Overloading example
+//    Another Method Overloading example. Method overloading uses the same method name but have different parameters.
 
     public static int sum(int a, int b){
         return a + b;
@@ -192,6 +193,26 @@ public class MyJava {
 
     public static int sum(int a, int b, int c){
         return a + b + c;
+    }
+
+    public static String getDurationString(int minutes, int seconds){
+        if((minutes < 0) || (seconds < 0) || (seconds > 59)){
+            return "Invalid value";
+        }
+        int hours = minutes / 60;
+        int remainingMinutes = minutes % 60;
+        return hours + "h " + remainingMinutes + "m " + seconds + "s";
+    }
+
+    public static String getDurationString(int seconds){
+        if(seconds < 0){
+            return "Invalid value";
+        }
+        int minutes = seconds / 60;
+        int remainingSeconds = seconds % 60;
+
+        return getDurationString(minutes,remainingSeconds);
+
     }
 
 
