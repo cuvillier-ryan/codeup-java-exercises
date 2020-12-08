@@ -4,6 +4,9 @@ public class MyJava {
 
     public static void main(String[] args) {
 
+        Scanner myVar = new Scanner(System.in);
+        System.out.println(myVar.nextLine());
+
         boolean gameOver = true;
         int score = 800;
         int levelCompleted = 5;
@@ -171,6 +174,16 @@ public class MyJava {
         return centimeters;
     }
 
+    public static double calcFeetAndInchesToCentimeters(double inches){
+        if(inches < 0){
+            return -1;
+        }
+        double feet = (int) inches / 12;
+        double remainingInches = (int) inches % 12;
+        System.out.println(inches + " inches is equal to " + feet + " feet and " + remainingInches);
+        return calcFeetAndInchesToCentimeters(feet, remainingInches);
+    }
+
 //    public static double calcFeetAndInchesToCentimeters(double inches){
 //        if(inches >= 0){
 //
@@ -178,19 +191,12 @@ public class MyJava {
 //        return -1;
 //    }
 
-    public static void practice(int N){
-        for(int i = 1; i <= 10; i++){
-            int sum = N * i;
-            System.out.println(N + " x " + i + " = " + sum);
-        }
-
-
-        public static void practice(int N){
-            for(int i = 1; i <= 10; i++){
-                int sum = N * i;
-                System.out.println(N + " x " + i + " = " + sum);
-            }
-    }
+//    public static void practice(int N){
+//        for(int i = 1; i <= 10; i++){
+//            int sum = N * i;
+//            System.out.println(N + " x " + i + " = " + sum);
+//        }
+//    }
 
 
 

@@ -36,7 +36,8 @@ public class Main {
 //        System.out.println("Int: " + i);
         MyJava.calcFeetAndInchesToCentimeters(6, 13);
 
-        MyJava.practice(10);
+        MyJava.calcFeetAndInchesToCentimeters(100);
+
 
 
 
