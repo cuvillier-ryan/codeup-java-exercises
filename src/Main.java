@@ -40,6 +40,7 @@ public class Main {
         System.out.println(MyJava.getDurationString(65, 45));
         System.out.println(MyJava.getDurationString(3945));
         System.out.println(MyJava.getDurationString(-41));
+        System.out.println(MyJava.getDurationString(65, 9));
 
 
 
