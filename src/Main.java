@@ -39,6 +39,7 @@ public class Main {
         MyJava.calcFeetAndInchesToCentimeters(100);
         System.out.println(MyJava.getDurationString(65, 45));
         System.out.println(MyJava.getDurationString(3945));
+        System.out.println(MyJava.getDurationString(-41));
 
 
 
