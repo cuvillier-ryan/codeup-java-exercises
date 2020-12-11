@@ -2,7 +2,7 @@ import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class MyJava {
-
+    private static final String INVALID_VALUE_MESSAGE = "Invalid value";
     public static void main(String[] args) {
 
         Scanner myVar = new Scanner(System.in);
@@ -130,32 +130,32 @@ public class MyJava {
 
     public static boolean areEqualByThreeDecimalPlaces(double num1, double num2) {
         if ((int) (num1 * 1000) == (int) (num2 * 1000)) {
-        return true;
+            return true;
         }
         return false;
     }
 
-    public static boolean hasEqualSum(int num1, int num2, int num3){
+    public static boolean hasEqualSum(int num1, int num2, int num3) {
         int sumNum1Num2 = num1 + num2;
-        if(sumNum1Num2 == num3){
+        if (sumNum1Num2 == num3) {
             return true;
         }
         return false;
     }
 
-    public static boolean hasTeen(int num1, int num2, int num3){
-        if(num1 >= 13 && num1 <= 19){
+    public static boolean hasTeen(int num1, int num2, int num3) {
+        if (num1 >= 13 && num1 <= 19) {
             return true;
-        }else if(num2 >= 13 && num2 <= 19){
+        } else if (num2 >= 13 && num2 <= 19) {
             return true;
-        }else if(num3 >= 13 && num3 <= 19){
+        } else if (num3 >= 13 && num3 <= 19) {
             return true;
         }
         return false;
     }
 
-    public static boolean isTeen(int num1){
-        if(num1 >= 13 && num1 <= 19){
+    public static boolean isTeen(int num1) {
+        if (num1 >= 13 && num1 <= 19) {
             return true;
         }
         return false;
@@ -163,8 +163,8 @@ public class MyJava {
 
 //    Method Overloading Udemy Challenge
 
-    public static double calcFeetAndInchesToCentimeters(double feet, double inches){
-        if((feet < 0) || ((inches < 0) || (inches > 12))){
+    public static double calcFeetAndInchesToCentimeters(double feet, double inches) {
+        if ((feet < 0) || ((inches < 0) || (inches > 12))) {
             System.out.println("Invalid feet and inches parameters");
             return -1;
         }
@@ -175,8 +175,8 @@ public class MyJava {
         return centimeters;
     }
 
-    public static double calcFeetAndInchesToCentimeters(double inches){
-        if(inches < 0){
+    public static double calcFeetAndInchesToCentimeters(double inches) {
+        if (inches < 0) {
             return -1;
         }
         double feet = (int) inches / 12;
@@ -187,52 +187,49 @@ public class MyJava {
 
 //    Another Method Overloading example. Method overloading uses the same method name but have different parameters.
 
-    public static int sum(int a, int b){
+    public static int sum(int a, int b) {
         return a + b;
     }
 
-    public static int sum(int a, int b, int c){
+    public static int sum(int a, int b, int c) {
         return a + b + c;
     }
 
-    public static String getDurationString(int minutes, int seconds){
-        if((minutes < 0) || (seconds < 0) || (seconds > 59)){
-            return "Invalid value";
+    public static String getDurationString(int minutes, int seconds) {
+        if ((minutes < 0) || (seconds < 0) || (seconds > 59)) {
+            return INVALID_VALUE_MESSAGE;
         }
         int hours = minutes / 60;
         int remainingMinutes = minutes % 60;
 
         String hoursString = hours + "h";
-        if(hours < 10){
+        if (hours < 10) {
             hoursString = "0" + hoursString;
         }
 
         String minutesString = remainingMinutes + "m";
-        if(remainingMinutes < 10){
+        if (remainingMinutes < 10) {
             minutesString = "0" + minutesString;
         }
 
         String secondsString = seconds + "s";
-        if(seconds < 10){
+        if (seconds < 10) {
             secondsString = "0" + secondsString;
         }
 
         return hoursString + " " + minutesString + " " + secondsString + " ";
     }
 
-    public static String getDurationString(int seconds){
-        if(seconds < 0){
-            return "Invalid value";
+    public static String getDurationString(int seconds) {
+        if (seconds < 0) {
+            return INVALID_VALUE_MESSAGE;
         }
         int minutes = seconds / 60;
         int remainingSeconds = seconds % 60;
 
-        return getDurationString(minutes,remainingSeconds);
+        return getDurationString(minutes, remainingSeconds);
 
     }
-
-
-
 
 
 //    public static double calcFeetAndInchesToCentimeters(double inches){
@@ -248,13 +245,6 @@ public class MyJava {
 //            System.out.println(N + " x " + i + " = " + sum);
 //        }
 //    }
-
-
-
-
-
-
-
 
 
 //        if (year % 4 == 0 && year % 100 == 0 && year % 400 == 0) {
