@@ -41,7 +41,7 @@ public class Main {
         System.out.println(MyJava.getDurationString(3945));
         System.out.println(MyJava.getDurationString(-41));
         System.out.println(MyJava.getDurationString(65, 9));
-        MyJava.printYearsAndDays(-525600);
+        MyJava.printYearsAndDays(525600);
 
 
 

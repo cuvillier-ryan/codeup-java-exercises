@@ -253,6 +253,9 @@ public class MyJava {
             long hours = minutes / 60;
             long days = hours / 24;
             long years = days / 365;
+            if(days >= years) {
+                days = 0;
+            }
             System.out.println(minutes + " min = " + years + " y and " + days + " d");
         }
     }
