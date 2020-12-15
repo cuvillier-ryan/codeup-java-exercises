@@ -257,6 +257,7 @@ public class MyJava {
                 days = 0;
             }
             System.out.println(minutes + " min = " + years + " y and " + days + " d");
+            System.out.println(minutes);
         }
     }
 
