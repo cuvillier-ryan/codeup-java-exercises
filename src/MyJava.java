@@ -273,7 +273,6 @@ public class MyJava {
             } else{
                 return 4;
             }
-
         }
 
 

@@ -31,9 +31,9 @@ public class Main {
 //        // Write your code here.
 //
 //
-//        System.out.println("String: " + s);
-//        System.out.println("Double: " + d);
-//        System.out.println("Int: " + i);
+        System.out.println("String: " + s);
+        System.out.println("Double: " + d);
+        System.out.println("Int: " + i);
         MyJava.calcFeetAndInchesToCentimeters(6, 13);
 
         MyJava.calcFeetAndInchesToCentimeters(100);
@@ -42,6 +42,7 @@ public class Main {
         System.out.println(MyJava.getDurationString(-41));
         System.out.println(MyJava.getDurationString(65, 9));
         MyJava.printYearsAndDays(525600);
+        System.out.println(MyJava.quarterOf(13));
 
 
 
